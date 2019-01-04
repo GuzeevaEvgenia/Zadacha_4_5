@@ -24,7 +24,7 @@ namespace Zadacha_4_5
 
         private void StartButton_Click(object sender, EventArgs e)
         {
-            image = Image.FromFile("C:/Users/1/source/repos/Zadacha_4_5/Zadacha_4_5/Graphics/product.jpg");
+            image = Image.FromFile(System.IO.Path.GetFullPath(@"..\..\..\Zadacha_4_5\Graphics\product.jpg"));             //("C:/Users/1/source/repos/Zadacha_4_5/Zadacha_4_5/Graphics/product.jpg");
 
             transporterManager = new TransporterManager();
             transporterManager.Progress += Progress;
